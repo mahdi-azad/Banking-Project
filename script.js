@@ -24,9 +24,7 @@ loginButton.addEventListener("click", function() {
 
         const depositNumber = document.getElementById("depositAmount")
         const depositValue = depositNumber.value
-        if (depositValue < 0) {
-            alert("You cannot deposit that!")
-        }
+       
         if (depositValue < 0) {
             alert("You cannot deposit that!")
         } else if  (depositValue > 0) {
