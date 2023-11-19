@@ -27,7 +27,9 @@ loginButton.addEventListener("click", function() {
         if (depositValue < 0) {
             alert("You cannot deposit that!")
         }
-        if (depositValue != 0) {
+        if (depositValue < 0) {
+            alert("You cannot deposit that!")
+        } else if  (depositValue > 0) {
             const current = document.getElementById("newBalance").innerText
             const currentNumber = parseFloat(current)
             const depositNum = parseFloat(depositValue)
@@ -44,7 +46,8 @@ loginButton.addEventListener("click", function() {
 
             //deposit input reset
             depositNumber.value = '';
-
+        } else {
+            alert("You cannot deposit that!")
         }
    
     })
@@ -58,8 +61,7 @@ loginButton.addEventListener("click", function() {
 
             if (withdrawValue < 0) {
                 alert("You cannot withdraw that!")
-            }
-            if (withdrawValue >= 0) {
+            } else if (withdrawValue > 0) {
                 const current = document.getElementById("newBalance").innerText
                 const currentNumber = parseFloat(current)
                 const withdrawNum = parseFloat(withdrawValue)
