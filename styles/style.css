@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#loginarea {
+   padding: 50px 0px;
+   
+}
+
+.submit-form {
+    margin-top: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 40px;
+}
+
+#transaction-area {
+    margin-top: 50px;
+    display: none;
+}
+.deposit {
+    background-color: green;   
+}
+.withdraw {
+    background-color: rgb(255, 79, 79);
+}
+.balance {
+    background-color: rgb(94, 94, 253);
+}
+
+.transaction-box {
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
