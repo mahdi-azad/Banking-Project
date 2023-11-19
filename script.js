@@ -77,7 +77,7 @@ loginButton.addEventListener("click", function() {
 
                     //widthdraw input reset
                     withdrawNumber.value = '';
-                } else {
+                } else if (total < 0) {
                     alert("You cannot withdraw that!")
                 }
                 
