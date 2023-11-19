@@ -27,7 +27,7 @@ loginButton.addEventListener("click", function() {
         if (depositValue < 0) {
             alert("You cannot deposit that!")
         }
-        if (depositValue >= 0) {
+        if (depositValue != 0) {
             const current = document.getElementById("newBalance").innerText
             const currentNumber = parseFloat(current)
             const depositNum = parseFloat(depositValue)
@@ -78,7 +78,7 @@ loginButton.addEventListener("click", function() {
                     //widthdraw input reset
                     withdrawNumber.value = '';
                 } else {
-                    alert("You are withdrawing more than your balance!")
+                    alert("You cannot withdraw that!")
                 }
                 
                 
